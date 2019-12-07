@@ -1,1 +1,11 @@
-<button [style.background-color]="backgroundColor">{{ text }}</button>
+<div
+  (click)="buttonClicked()"
+  (mouseenter)="change()"
+  (mouseleave)="change()"
+  [style.background-color]="backgroundColor"
+>
+  <p [style.opacity]="showIcon ? '0' : '1'">{{ text }}</p>
+  <i [style.opacity]="!showIcon ? '0' : '1'" class="material-icons">{{
+    icon
+  }}</i>
+</div>

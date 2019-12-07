@@ -1,10 +1,34 @@
-button {
-  border: none;
-  border-radius: 5rem;
+div {
+  font-family: "Roboto", sans-serif;
+  width: 4rem;
+  border-radius: 50%;
   padding: 1rem 0.5rem;
   transition: 0.2s all ease-in;
+  border: none;
   cursor: pointer;
+  color: black;
+  position: relative;
+  max-height: 3rem;
   &:hover {
     padding: 1rem 2rem;
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.512) !important;
+    p {
+      font-weight: bold;
+    }
+  }
+  i,
+  p {
+    transition: 0.2s 0.1s all ease-in;
+    margin-left: 1rem;
+  }
+  i {
+    font-size: 2rem;
+  }
+  p {
+    color: black;
+    position: absolute;
+    bottom: 0.5rem;
+    margin-left: 0.2rem;
   }
 }

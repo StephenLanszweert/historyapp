@@ -1,4 +1,31 @@
-<div id="overlay">
-  <h1>History app</h1>
-  <app-button text="Persons" backgroundColor="#FFFFFF"></app-button>
+<div id="overlay" class="modal-active">
+  <app-button
+    class="persons-btn"
+    text="People"
+    (btnClicked)="animateBtn($event)"
+    icon="perm_identity"
+    backgroundColor="#FFFFFF"
+  ></app-button>
+  <app-button
+    class="events-btn"
+    text="Events"
+    (btnClicked)="animateBtn($event)"
+    icon="event"
+    backgroundColor="#FFFFFF"
+  ></app-button>
+  <app-button
+    class="places-btn"
+    text="Places"
+    (btnClicked)="animateBtn($event)"
+    icon="apartment"
+    backgroundColor="#FFFFFF"
+  ></app-button>
+  <div id="modal-container" #modal (click)="closeModal($event)">
+    <div class="modal-background">
+      <div class="modal">
+        <h2>I'm a Modal</h2>
+        <p>Hear me roar.</p>
+      </div>
+    </div>
+  </div>
 </div>
