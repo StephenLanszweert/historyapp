@@ -1,0 +1,10 @@
+button {
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 0.5rem;
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+  &:hover {
+    padding: 1rem 2rem;
+  }
+}
